@@ -4,14 +4,14 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    EnterpriseReady – DM Emanote
+    Two Pointers – DM Emanote
   </title>
   
     
       <meta property='og:description' content />
       <meta property='og:site_name' content='DM Emanote' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='EnterpriseReady' />
+      <meta property='og:title' content='Two Pointers' />
     
     
       <base href='/emanote/' />
@@ -430,7 +430,11 @@
             
               <!-- Variable bindings for this tree-->
   
-  
+    
+      
+    
+    
+
 
 
   
@@ -443,12 +447,12 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
         </path>
       </svg>
-      
+    
   
-    <a class='font-bold text-red-600 hover:underline truncate' title='EnterpriseReady' href='2022-02-28_enterpriseready'>
+    <a class='hover:underline truncate' title='EnterpriseReady' href='2022-02-28_enterpriseready'>
       EnterpriseReady
     </a>
     
@@ -855,11 +859,7 @@
             
               <!-- Variable bindings for this tree-->
   
-    
-      
-    
-    
-
+  
 
 
   
@@ -872,12 +872,12 @@
     
     
       <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
-        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z'>
         </path>
       </svg>
-    
+      
   
-    <a class='hover:underline truncate' title='Two Pointers' href='2022-03-05_2003_two-pointers'>
+    <a class='font-bold text-red-600 hover:underline truncate' title='Two Pointers' href='2022-03-05_2003_two-pointers'>
       Two Pointers
     </a>
     
@@ -979,26 +979,46 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-red-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    EnterpriseReady
+    Two Pointers
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
   
+    <blockquote class='py-0.5 px-4 mb-3 italic border-l-4 bg-gray-50 text-gray-600 border-gray-400 quote'>
+      
     <p class='mb-3'>
-      <a href='https://www.enterpriseready.io/about/' class='text-red-600 hover:underline' target='_blank' rel='noopener'>EnterpriseReady</a> “is a guide to creating or enhancing a SaaS product with common features that will enable more adoption by enterprise customers.”
+      In problems where we deal with sorted arrays (or LinkedLists) and need to find a set of elements that fulfill certain constraints, the Two Pointers approach becomes quite useful. The set of elements could be a pair, a triplet or even a subarray. For example, take a look at the following problem:
     </p>
   
     <p class='mb-3'>
-      Found via <a href='2022-02-28_1120_on-premise-offering' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>On-Premise Offerings</a>
+      Given an array of sorted numbers and a target sum, find a pair in the array whose sum is equal to the given target. To solve this problem, we can consider each element one by one (pointed out by the first pointer) and iterate through the remaining elements (pointed out by the second pointer) to find a pair with the given sum. The time complexity of this algorithm will be O(N^2) where ‘N’ is the number of elements in the input array.
     </p>
   
     <p class='mb-3'>
-      <a href='https://www.enterpriseready.io/#features' class='text-red-600 hover:underline' target='_blank' rel='noopener'>Feature Sets</a> describes typical requirements that enterprise appreciate.
+      Given that the input array is sorted, an efficient way would be to start with one pointer in the beginning and another pointer at the end. At every step, we will see if the numbers pointed by the two pointers add up to the target sum. If they do not, we will do one of two things:
+    </p>
+  
+    <p class='mb-3'>
+      If the sum of the two numbers pointed by the two pointers is greater than the target sum, this means that we need a pair with a smaller sum. So, to try more pairs, we can decrement the end-pointer. If the sum of the two numbers pointed by the two pointers is smaller than the target sum, this means that we need a pair with a larger sum. So, to try more pairs, we can increment the start-pointer.
+    </p>
+  
+    </blockquote>
+  
+    <p class='mb-3'>
+      <a href='https://github.com/Chanda-Abdul/Grokking-the-Coding-Interview-Patterns' class='text-red-600 hover:underline' target='_blank' rel='noopener'>From</a>
+    </p>
+  
+    <p class='mb-3'>
+      <a href='https://github.com/Chanda-Abdul/Grokking-the-Coding-Interview-Patterns/blob/main/✅%20%20Pattern%2002:%20Two%20Pointers.md' class='text-red-600 hover:underline' target='_blank' rel='noopener'>Fuller notes here</a>
+    </p>
+  
+    <p class='mb-3'>
+      <span class='font-bold bg-gray-100 py-0.5 px-2 rounded-lg emanote:inline-tag:algorithms' title='Tag' data-tag='algorithms'><a href='-/tags/algorithms' title='Tag' class='text-red-600 mavenLinkBold hover:underline'>#algorithms</a></span>
     </p>
   
   <div class='flex items-center justify-center mt-2'>
-  <a class='text-gray-300 hover:text-red-600 text-sm' title='Edit this page on GitHub' href='https://github.com/ddmee/emanote/edit/master/content/2022-02-28_enterpriseready.md'>
+  <a class='text-gray-300 hover:text-red-600 text-sm' title='Edit this page on GitHub' href='https://github.com/ddmee/emanote/edit/master/content/2022-03-05_2003_two-pointers.md'>
     <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
       <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z'></path>
     </svg>
@@ -1013,14 +1033,14 @@
     <ul class='space-y-1'>
       
         <li>
-          <a class='text-red-600 mavenLinkBold hover:bg-red-50' href='2022-02-28_1120_on-premise-offering'>
-            On-Premise Offerings
+          <a class='text-red-600 mavenLinkBold hover:bg-red-50' href='2022-02-28_groking_the_coding_interview'>
+            Grokking the Coding Interview
           </a>
           
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
-      <div><p>Someone recommended <a href='https://www.enterpriseready.io/about' class='text-gray-600 hover:underline' target='_blank' rel='noopener'>EnterpriseReady</a> as a guide on common enterprise requirements for software. See <a href='2022-02-28_enterpriseready' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>EnterpriseReady</a></p></div>
+      <div><a href='2022-03-05_2003_two-pointers' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Two pointer</a></div>
     </div>
   
 </div>
@@ -1033,6 +1053,12 @@
             </div>
             
   <section class='flex flex-wrap items-end justify-center my-4 space-x-2 space-y-2 font-mono text-sm'>
+    
+      <a title='Tag' class='px-1 bg-gray-100 rounded hover:bg-gray-50 hover:text-red-500' href='-/tags/algorithms'>
+        <!-- DoNotFormat -->
+        #algorithms
+        <!-- DoNotFormat -->
+      </a>
     
   </section>
 
