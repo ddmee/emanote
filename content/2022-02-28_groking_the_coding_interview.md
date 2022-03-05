@@ -9,7 +9,7 @@
 The course has 16 different problem 'pattern' that it teaches.
 
 1. [[2022-03-04-2022-sliding-window|Sliding window]]
-2. Two pointer
+2. [[2022-03-05_2003_two-pointers|Two pointer]]
 3. Fast & slow pointers
 4. Merge intervals
 5. Cyclic sort
