@@ -1,4 +1,4 @@
-## How routers boot
+# How routers boot
 
 Found this well explained post at [Router 101](http://ofmodemsandmen.com/router101.html) ([internet archive link](https://web.archive.org/web/20220307153530/http://ofmodemsandmen.com/router101.html)) describing how the firmware and bootloader process for routers.
 

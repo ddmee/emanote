@@ -1,4 +1,4 @@
-## Graphs of the growths
+# Graphs of the growths
 
 The most common orders of growth we write down:
 

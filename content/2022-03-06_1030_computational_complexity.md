@@ -1,4 +1,4 @@
-## Issues around time. Computational Complexity
+# Computational Complexity. Issues around time.
 
 Question: how long does a program take to run? How would we answer that?
 

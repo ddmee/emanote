@@ -1,4 +1,4 @@
-## Techstars Toolkit
+# Techstars Toolkit
 
 https://toolkit.techstars.com
 
