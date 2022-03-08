@@ -1,30 +1,34 @@
-# Computational Complexity. Issues around time.
+# Computational Time Complexity. Issues around time.
 
-Question: how long does a program take to run? How would we answer that?
+## Question: how long does a program take to run? How would we answer that?
 
 We could run it on a computer and time it. Then we could compare the results. That's a bad way to think about it. For a start, it's not a stable measure. The speed of the machine matters. The cleverness of the programming language implementation will also impact it. Plus, we won't know until we run it how long it should take. What if the program never completes? What if the program is meant to complete but doesn't seem to? It also depends on the input. What happens if I give the program a big input? That'll take longer than giving it a smaller input.
 
 So this approach has too many variables to control.
 
-Instead, what we do is count the number of basic steps in the program.
+Instead, **what we do is count the number of basic steps in the program**.
 
 Define a function: `T: N -> N`
 
-Size of the input -> Number of Steps computational will take
+Time: Size of the input -> Number of Steps computational will take
 
-A step is a computation that takes a constant time. So steps are not variable. They are a constant.
+A step is a computation that takes a constant time. So steps are not variable. They are a constant operations. E.g. an assignment, a variable access, addition etc.
 
-E.g. an assignment, a variable access, addition etc.
+## RAM model
 
-We are going to use a model of computation called a Random Access Machine (RAM). See [[2022-03-06_1035_ram_model]]
+We are going to use a model of computation called a Random Access Machine (RAM). See [[2022-03-06_1035_ram_model]]. This is to abstract away some of the complexities of hardware varieties towards something that is often roughly correct. Would be interesting to know ways we can break this model.
 
-Question: if we are considering the number of steps a program will take over it's inputs, which of these inputs are we interested in?
+## Question: if we are considering the number of steps a program will take over it's inputs, which of these inputs are we interested in?
 
-Best case - the minimum running time over all possible inputs
-Worst case - the maximum running time over all possible inputs
-Average/expected case - the typical running time over all possible inputs
+- Best case - the minimum running time over all possible inputs
+- Worst case - the maximum running time over all possible inputs
+- Average/expected case - the typical running time over all possible inputs
 
-The average/expected case seems like the one we should care about. The Best case is too optimistic. The expected case is hard because we have to think about what the distribution of queries looks like. The expected case really depends on the frequency of particular inputs to the function. As if we get a lot of 'best' cases as queries, then the expected case looks better. Whereas if we get a lot of pathological/worst-cases, then the average looks a lot slower. Calculating the average running time is harder than calculating the worst case. In reality, we usually care about the worst case when we compute complexity of a program.
+The average/expected case seems like the one we should care about. The Best case is too optimistic. The expected case is hard because we have to think about what the distribution of queries looks like. The expected case really depends on the frequency of particular inputs to the function. If we get a lot of 'best' cases as queries, then the expected case looks better. Whereas if we get a lot of pathological/worst-cases, then the average looks a lot slower. But a lot of the time, before we deploy an algorithm, we don't know what distribution of inputs it'll actually recieve.
+
+Thus calculating the average running time is harder than calculating the worst case. In reality, we usually care about the worst case (murphy's law) when we compute complexity of a program.
+
+## Lets look at an example
 
 ```python
 def f(n):  # calculates factorial
