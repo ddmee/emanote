@@ -4,14 +4,14 @@
   <meta charset='UTF-8' />
   <meta name='viewport' content='width=device-width, initial-scale=1' />
   <title>
-    Computational Complexity. Issues around time. – DM Emanote
+    Computational Time Complexity. Issues around time. – DM Emanote
   </title>
   
     
       <meta property='og:description' content />
       <meta property='og:site_name' content='DM Emanote' />
       <meta property='og:type' content='website' />
-      <meta property='og:title' content='Computational Complexity. Issues around time.' />
+      <meta property='og:title' content='Computational Time Complexity. Issues around time.' />
     
     
       <base href='/emanote/' />
@@ -20,7 +20,7 @@
     <meta name='generator' content='Emanote' />
 
   
-  <link href='tailwind.css?instanceId=72bc333e-798f-4500-977b-9fcb3f1be668' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=385a670c-c54a-4213-9e35-e764fb6f3a4a' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style type='text/css'>
@@ -370,8 +370,8 @@
       </svg>
       
   
-    <a class='font-bold text-red-600 hover:underline truncate' title='Computational Complexity. Issues around time.' href='2022-03-06_1030_computational_complexity'>
-      Computational Complexity. Issues around time.
+    <a class='font-bold text-red-600 hover:underline truncate' title='Computational Time Complexity. Issues around time.' href='2022-03-06_1030_computational_complexity'>
+      Computational Time Complexity. Issues around time.
     </a>
     
       
@@ -1759,16 +1759,12 @@
           <main class='px-4 py-4'>
             <h1 class='flex items-end justify-center mb-4 p-3 bg-red-100 text-5xl font-extrabold text-black rounded'>
   <a class='z-40 tracking-tighter '>
-    Computational Complexity. Issues around time.
+    Computational Time Complexity. Issues around time.
   </a>
 </h1>
             <article class='overflow-auto'>
   <!-- What goes in this file will appear on top of note body-->
-  
-    <p class='mb-3'>
-      Question: how long does a program take to run? How would we answer that?
-    </p>
-  
+  <h2 id='question-how-long-does-a-program-take-to-run-how-would-we-answer-that' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Question: how long does a program take to run? How would we answer that?</h2>
     <p class='mb-3'>
       We could run it on a computer and time it. Then we could compare the results. That’s a bad way to think about it. For a start, it’s not a stable measure. The speed of the machine matters. The cleverness of the programming language implementation will also impact it. Plus, we won’t know until we run it how long it should take. What if the program never completes? What if the program is meant to complete but doesn’t seem to? It also depends on the input. What happens if I give the program a big input? That’ll take longer than giving it a smaller input.
     </p>
@@ -1778,7 +1774,7 @@
     </p>
   
     <p class='mb-3'>
-      Instead, what we do is count the number of basic steps in the program.
+      Instead, <strong>what we do is count the number of basic steps in the program</strong>.
     </p>
   
     <p class='mb-3'>
@@ -1786,33 +1782,41 @@
     </p>
   
     <p class='mb-3'>
-      Size of the input -&gt; Number of Steps computational will take
+      Time: Size of the input -&gt; Number of Steps computational will take
     </p>
   
     <p class='mb-3'>
-      A step is a computation that takes a constant time. So steps are not variable. They are a constant.
+      A step is a computation that takes a constant time. So steps are not variable. They are a constant operations. E.g. an assignment, a variable access, addition etc.
+    </p>
+  <h2 id='ram-model' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>RAM model</h2>
+    <p class='mb-3'>
+      We are going to use a model of computation called a Random Access Machine (RAM). See <a href='2022-03-06_1035_ram_model' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Random Access Machine Model</a>. This is to abstract away some of the complexities of hardware varieties towards something that is often roughly correct. Would be interesting to know ways we can break this model.
+    </p>
+  <h2 id='question-if-we-are-considering-the-number-of-steps-a-program-will-take-over-its-inputs-which-of-these-inputs-are-we-interested-in' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Question: if we are considering the number of steps a program will take over it’s inputs, which of these inputs are we interested in?</h2>
+    <ul class='my-3 ml-6 space-y-1 list-disc'>
+      
+        <li>
+          Best case - the minimum running time over all possible inputs
+        </li>
+      
+        <li>
+          Worst case - the maximum running time over all possible inputs
+        </li>
+      
+        <li>
+          Average/expected case - the typical running time over all possible inputs
+        </li>
+      
+    </ul>
+  
+    <p class='mb-3'>
+      The average/expected case seems like the one we should care about. The Best case is too optimistic. The expected case is hard because we have to think about what the distribution of queries looks like. The expected case really depends on the frequency of particular inputs to the function. If we get a lot of ‘best’ cases as queries, then the expected case looks better. Whereas if we get a lot of pathological/worst-cases, then the average looks a lot slower. But a lot of the time, before we deploy an algorithm, we don’t know what distribution of inputs it’ll actually recieve.
     </p>
   
     <p class='mb-3'>
-      E.g. an assignment, a variable access, addition etc.
+      Thus calculating the average running time is harder than calculating the worst case. In reality, we usually care about the worst case (murphy’s law) when we compute complexity of a program.
     </p>
-  
-    <p class='mb-3'>
-      We are going to use a model of computation called a Random Access Machine (RAM). See <a href='2022-03-06_1035_ram_model' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Random Access Machine Model</a>
-    </p>
-  
-    <p class='mb-3'>
-      Question: if we are considering the number of steps a program will take over it’s inputs, which of these inputs are we interested in?
-    </p>
-  
-    <p class='mb-3'>
-      Best case - the minimum running time over all possible inputs Worst case - the maximum running time over all possible inputs Average/expected case - the typical running time over all possible inputs
-    </p>
-  
-    <p class='mb-3'>
-      The average/expected case seems like the one we should care about. The Best case is too optimistic. The expected case is hard because we have to think about what the distribution of queries looks like. The expected case really depends on the frequency of particular inputs to the function. As if we get a lot of ‘best’ cases as queries, then the expected case looks better. Whereas if we get a lot of pathological/worst-cases, then the average looks a lot slower. Calculating the average running time is harder than calculating the worst case. In reality, we usually care about the worst case when we compute complexity of a program.
-    </p>
-  <div class='py-0.5 mb-3 text-sm'><pre><code class='python language-python'>def f(n):  # calculates factorial
+  <h2 id='lets-look-at-an-example' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Lets look at an example</h2><div class='py-0.5 mb-3 text-sm'><pre><code class='python language-python'>def f(n):  # calculates factorial
     assert n &gt;= 0
     answer = 1
     while n &gt; 1:
@@ -1886,7 +1890,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
-      <div><p>See <a href='2022-03-06_1030_computational_complexity' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Computational Complexity. Issues around time.</a></p></div>
+      <div><p>See <a href='2022-03-06_1030_computational_complexity' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Computational Time Complexity. Issues around time.</a></p></div>
     </div>
   
 </div>
@@ -1901,7 +1905,7 @@
             <div class='mb-4 overflow-auto text-sm text-gray-500'>
   
     <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
-      <div><p>See <a href='2022-03-06_1030_computational_complexity' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Computational Complexity. Issues around time.</a></p></div>
+      <div><p>See <a href='2022-03-06_1030_computational_complexity' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Computational Time Complexity. Issues around time.</a></p></div>
     </div>
   
 </div>
