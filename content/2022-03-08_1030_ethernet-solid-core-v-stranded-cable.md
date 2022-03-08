@@ -4,7 +4,7 @@ Stranded cabling means each internal cable is made out of strands of copper. Thi
 
 Solid core cabling, the internal wires are made of single wire of cooper.
 
-![[2022-03-08_1030_ethernet-solid-v-core.png]]
+![[2022-03-08_ethernet-solid-v-core.png]]
 
 From [cable academy](https://www.truecable.com/blogs/cable-academy/solid-vs-stranded-ethernet-cable)
 
