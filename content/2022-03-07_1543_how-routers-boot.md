@@ -18,7 +18,7 @@ There's normally another partition that holds data-storage:
 
 ![[2022-03-07_router_flash_layout.png]]
 
-Seems to fairly well describe how #openwrt is laided out.
+Seems to fairly well describe how #openwrt is laided out. And indeed largely describes the [[2022-03-08_1522_glinet_convexa_b1300]]
 
 The page also describes the recovery features to #debrick the router.
 

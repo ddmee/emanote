@@ -12,4 +12,10 @@ From wolframhempel's comment on [Ask HN: What made your business take off that y
 
 [[2022-02-28_1124_hn_what_made_your_business_take_off]]
 
-Someone recommended [EnterpriseReady](https://www.enterpriseready.io/about) as a guide on common enterprise requirements for software. See [[2022-02-28_enterpriseready]]
+Someone recommended [EnterpriseReady](https://www.enterpriseready.io/about) as a guide on common enterprise requirements for software. See [[2022-02-28_1130_enterpriseready]]
+
+See also [[2022-02-28_1120_on-premise-offering]]
+
+#business
+#saas
+#enterprise

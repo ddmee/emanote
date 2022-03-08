@@ -23,7 +23,7 @@ Linear grows slower than log-linear growth.
 
 ![[linear_v_log_linear.png]]
 
-Log-linear growths a lot slower than quadratic. In practice it's often the case that quadratic complexity is too slow for use.
+Log-linear growths a lot slower than quadratic. Log-linear is the fastest time bound we can currently achieve for [[sorting a list|2022-03-08_1816_sorting-a-list]] of elements, e.g. [[2022-03-08_2109_merge-sort]]. In practice it's often the case that quadratic complexity is too slow for use. Often quadratic is the bound when we have nested loops. For example see [[2022-03-08_1851_bubble-sort]]
 
 ![[log_linear_v_quadratic.png]]
 

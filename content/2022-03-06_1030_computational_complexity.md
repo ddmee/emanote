@@ -12,7 +12,7 @@ Define a function: `T: N -> N`
 
 Time: Size of the input -> Number of Steps computational will take
 
-A step is a computation that takes a constant time. So steps are not variable. They are a constant operations. E.g. an assignment, a variable access, addition etc.
+A step is a computation that takes a constant time. So steps are not variable. They are a constant operations. E.g. an assignment, a variable access, addition etc. If interested, can take a look at [python's operations time complexity here](https://wiki.python.org/moin/TimeComplexity)
 
 ## RAM model
 
@@ -52,7 +52,7 @@ We can go further. Do we really care if it's 3000 or 9000? Well I might. As it g
 
 So typically we even ignore multiplicative constants. We use a model of **asymptotic growth** that talks about how complexity grows as we reach the limits of the sizes of the input.
 
-We typically do this using notation called Big O notation.
+We typically do this using notation called [Big O notation](http://en.wikipedia.org/wiki/Big_O_notation). "Big-O notation in the analysis of algorithms to describe an algorithm’s usage of computational resources, in a way that is independent of computer architecture or clock rate." [From](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/unit-1/lecture-8-efficiency-and-order-of-growth/MIT6_00SCS11_rec04.pdf)
 
 We write: `O(n)`. That we call 'Order N'. That means running time grows linearly with the size of the input N. It's not actually a big O. It's the greek symbol Omicron. (Choosen by Donald Knuth) We typically use latin letter O because it's easier to type.
 
