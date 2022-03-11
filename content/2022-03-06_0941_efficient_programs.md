@@ -67,6 +67,14 @@ def h(x):
 
 [[2022-03-06_1050_binary-search]] which is `O(log2(length(n)))`
 
+## See sorting next...
+
+MIT course continues onto [[2022-03-08_1816_sorting-a-list]]
+
+## Hashing
+
+And then onto hasing [[2022-03-11_0906-hashing]]
+
 #complexity
 #growth
 #algorithms

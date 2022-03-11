@@ -9,6 +9,7 @@ O(n) = linear growth
 O(n log n) = log-linear growth
 O(n ** c) = polynominal (e.g. x cubed) (where c is some constant)
 O(c ** n) = exponential to the size of the input
+O(n!) = factorial time
 ```
 
 Constant growth doesn't grow at all as the input grows. Logarithmic grows slowly compared to the input.
