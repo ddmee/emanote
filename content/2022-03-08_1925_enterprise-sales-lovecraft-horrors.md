@@ -1,4 +1,4 @@
-## Enterprise Sales and Lovecraftian Horrors
+# Enterprise Sales and Lovecraftian Horrors
 
 [Selling To The Fortune 500, Government, And Other Lovecraftian Horrors](https://training.kalzumeus.com/newsletters/archive/enterprise_sales) by Patrick McKenzie.
 
