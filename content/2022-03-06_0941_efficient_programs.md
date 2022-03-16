@@ -75,6 +75,10 @@ MIT course continues onto [[2022-03-08_1816_sorting-a-list]]
 
 And then onto hasing [[2022-03-11_0906-hashing]]
 
+## Optimisation Problems
+
+See on [[2022-03-16_1635_optimisation-problems]]
+
 #complexity
 #growth
 #algorithms
