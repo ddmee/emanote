@@ -27,6 +27,8 @@ Note, for a continous version of this problem, a greedy algorithm provides an op
 ## How good are these answers?
 
 
+Also see [Knapsack Pattern Note](https://github.com/ddmee/Grokking-the-Coding-Interview-Patterns/blob/main/✅%20Pattern%2015:%200-1%20Knapsack%20(Dynamic%20Programming).md)
+
 #algorithms
 #optimisation
 #complexity

@@ -22,7 +22,7 @@ The course has 16 different problem 'pattern' that it teaches.
 12. Bitwise XOR
 13. Top 'K' elements
 14. K-way merge
-15. 0/1 Knapsnack Problem
+15. [[2022-03-16_1646_knapsack-problem|0/1 Knapsnack Problem]]
 16. Topological sort
 
 Related to [[2022-02-28_1054_leetcode]]
