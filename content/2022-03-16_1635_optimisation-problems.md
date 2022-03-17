@@ -31,8 +31,16 @@ One of the classic optimisation problems is the [[2022-03-16_1646_knapsack-probl
 
 Note, optimisiation problems often are *inherently exponential* to produce an algorithm that guarantees that the optimal/best solution is found. This is the runtime for the *worst case*. But, there are algorithms used to solve these problems fast enough to be useful.
 
+## Machine Learning
+
+Machine learning problems can often be seen as optimisation problems. See [[2022-03-17_0840_machine-learning]]
+
+For unsupervised learning, we're often interested in clustering the data to classify it. Clustering can be tackled as an optimisation problem. See [[2022-03-17_1012_clustering]].
+
+
 Notes from [MIT Opencourseware CS 6-00sc sprint 2011](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-00sc-introduction-to-computer-science-and-programming-spring-2011/unit-2/lecture-18-optimization-problems-and-algorithms/) by Prof John Guttag.
 
 #algorithms
 #optimisation
 #complexity
+#clustering
