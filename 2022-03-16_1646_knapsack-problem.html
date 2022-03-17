@@ -20,7 +20,7 @@
     <meta name='generator' content='Emanote' />
 
   
-  <link href='tailwind.css?instanceId=9a9d8cb4-da5d-43e3-a5f5-4134f273bc9a' rel='stylesheet' type='text/css' />
+  <link href='tailwind.css?instanceId=43b35390-7fbe-48fb-9d7d-19319b0bcccc' rel='stylesheet' type='text/css' />
 
   <!-- Heist error element -->
   <style type='text/css'>
@@ -179,8 +179,8 @@
       </svg>
     
   
-    <a class='hover:underline truncate' title='Absolute Optimal Knapsack Solution' href='2022-03-16_1814_absolute-optimal-knapsack-solution'>
-      Absolute Optimal Knapsack Solution
+    <a class='hover:underline truncate' title='Absolute Optimal/Brute Force Knapsack Solution' href='2022-03-16_1814_absolute-optimal-knapsack-solution'>
+      Absolute Optimal/Brute Force Knapsack Solution
     </a>
     
       
@@ -2164,6 +2164,45 @@
       </svg>
     
   
+    <a class='hover:underline truncate' title='Power Sets' href='2022-03-17_0800_power-sets'>
+      Power Sets
+    </a>
+    
+      
+  </div>
+
+  <!-- Node's children forest, displayed only on active trees
+    TODO: Use <details> to toggle visibility?
+  -->
+  
+    
+  
+</div>
+            
+              <!-- Variable bindings for this tree-->
+  
+    
+      
+    
+    
+
+
+
+  
+
+
+<!-- Rendering of this tree -->
+<div class='pl-2'>
+  <!-- Node's rootLabel-->
+  <div class='flex items-center my-2 space-x-2 justify-left'>
+    
+    
+      <svg class='w-4 h-4 flex-shrink-0 inline' fill='none' stroke='currentColor' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+        <path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z'>
+        </path>
+      </svg>
+    
+  
     <a class='hover:underline truncate' title='Power over Ethernet (PoE)' href='2022-03-07_1908_power_over_ethernet'>
       Power over Ethernet (PoE)
     </a>
@@ -2741,7 +2780,7 @@
   <!-- What goes in this file will appear on top of note body-->
   
     <p class='mb-3'>
-      This is a classic <a href='2022-03-16_1635_optimisation-problems' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Optimisation Problems</a>. It’s an NP Hard problem. In that a perfect solution requires expontential time. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>O(2**n)</code> where n is the number of items.
+      This is a classic example of an <a href='2022-03-16_1635_optimisation-problems' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>optimisation problem</a>. It’s <span title='Link is broken'><s>[[an NP Hard problem|2022-03-06_1434_np_hard]]</s>❌</span>. In that a perfect solution requires expontential time. <code class='py-0.5 px-1 rounded bg-gray-700 text-sm text-white'>O(2**n)</code> where n is the number of items. See <a href='2022-03-16_1814_absolute-optimal-knapsack-solution' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Absolute Optimal/Brute Force Knapsack Solution</a>.
     </p>
   
     <p class='mb-3'>
@@ -2773,7 +2812,7 @@
     </p>
   <h2 id='absolute-optimal-solution' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Absolute optimal solution</h2>
     <p class='mb-3'>
-      See <a href='2022-03-16_1814_absolute-optimal-knapsack-solution' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Absolute Optimal Knapsack Solution</a>
+      See <a href='2022-03-16_1814_absolute-optimal-knapsack-solution' class='text-red-600 mavenLinkBold hover:underline' data-wikilink-type='WikiLinkNormal'>Absolute Optimal/Brute Force Knapsack Solution</a>
     </p>
   <h2 id='greedy-algorithm-solution' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>Greedy algorithm solution</h2>
     <p class='mb-3'>
@@ -2782,6 +2821,14 @@
   
     <p class='mb-3'>
       Note, for a continous version of this problem, a greedy algorithm provides an optium solution. But not for discrete (i.e. 1/0 knapsack) problems.
+    </p>
+  
+    <p class='mb-3'>
+      The problem with greedy alogorithms is that <em>local optimums at each step and combining them are not guaranteed to find the global optimum</em>.
+    </p>
+  
+    <p class='mb-3'>
+      The advantage of greedy algorithms is they are fast, relatively easy to code, and often produce a good guess.
     </p>
   <h2 id='how-good-are-these-answers' class='inline-block mt-6 mb-4 text-4xl font-bold text-gray-700 border-b-2'>How good are these answers?</h2>
     <p class='mb-3'>
@@ -2816,6 +2863,21 @@
   
     <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
       <div><p>One of the classic optimisation problems is the <a href='2022-03-16_1646_knapsack-problem' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Knapsack Problem</a>.</p></div>
+    </div>
+  
+</div>
+          
+        </li>
+      
+        <li>
+          <a class='text-red-600 mavenLinkBold hover:bg-red-50' href='2022-03-06_1434_np_hard'>
+            NP Complete NP Hard Problems
+          </a>
+          
+            <div class='mb-4 overflow-auto text-sm text-gray-500'>
+  
+    <div class='pl-2 mt-2 border-l-2 border-red-200 hover:border-red-500'>
+      <div><p>NP-hard means the problems are inherently exponential. E.g. the <a href='2022-03-16_1646_knapsack-problem' class='text-gray-600 font-bold hover:bg-gray-50' data-wikilink-type='WikiLinkNormal'>Knapsack Problem</a></p></div>
     </div>
   
 </div>
