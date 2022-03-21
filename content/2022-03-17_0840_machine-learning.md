@@ -38,6 +38,14 @@ The big difference here is we having training data but no labels. It's like look
 
 See [[2022-03-17_1012_clustering]]
 
+## Feature vector
+
+See [[2022-03-21_0813_feature-vector]].
+
+## Mammals example
+
+See [[2022-03-21_0903_clustering-mammals-example]].
+
 
 #algorithms
 #optimisation
