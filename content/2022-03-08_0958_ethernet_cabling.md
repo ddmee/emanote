@@ -1,6 +1,6 @@
 # Ethernet Cabling
 
-[[2022-03-08_ethernet-solid-core-v-stranded-cable]]
+[[2022-03-08_1030_ethernet-solid-core-v-stranded-cable]]
 
 [[2022-03-08_1045_ethernet-shielded-v-unshielded-cable]]
 
