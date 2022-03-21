@@ -1,4 +1,4 @@
-## Clustering Mammals Example
+# Clustering Mammals Example
 
 Objective, let's cluster mammals on what they eat. 
 

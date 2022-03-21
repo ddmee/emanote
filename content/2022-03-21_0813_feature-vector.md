@@ -1,4 +1,4 @@
-## Feature vector
+# Feature vector
 
 Something that incorporates multiple features for some data.
 

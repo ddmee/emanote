@@ -1,4 +1,4 @@
-## Scaling for clustering - normalisation
+# Scaling for clustering - normalisation
 
 Background [[2022-03-21_0813_feature-vector]]
 
